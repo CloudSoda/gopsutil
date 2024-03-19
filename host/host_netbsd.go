@@ -7,7 +7,7 @@ import (
 	"context"
 	"strings"
 
-	"github.com/shirou/gopsutil/v3/internal/common"
+	"github.com/cloudsoda/gopsutil/v3/internal/common"
 	"golang.org/x/sys/unix"
 )
 
