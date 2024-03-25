@@ -21,7 +21,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/shirou/gopsutil/v3/internal/common"
+	"github.com/cloudsoda/gopsutil/v3/internal/common"
 )
 
 var mu sync.Mutex
@@ -227,7 +227,7 @@ func Test_Process_NumCtx(t *testing.T) {
 func Test_Process_Nice(t *testing.T) {
 	p := testGetProcess()
 
-	// https://github.com/shirou/gopsutil/issues/1532
+	// https://github.com/cloudsoda/gopsutil/issues/1532
 	if os.Getenv("CI") == "true" && runtime.GOOS == "darwin" {
 		t.Skip("Skip CI")
 	}
